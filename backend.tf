@@ -1,6 +1,6 @@
 terraform {
   backend "s3" {
-    bucket = "aws-terraform-s3-jenkins-proj-bala"
+    bucket = "s3jenkinsbuckt"
     key    = "remote.tfstate"
     region = "us-east-1"
   }
