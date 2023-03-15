@@ -9,10 +9,10 @@ pipeline {
     }
 
 
-     environment {
-        AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
-        AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
-    }
+     //environment {
+    //    AWS_ACCESS_KEY_ID     = credentials('AWS_ACCESS_KEY_ID')
+   //     AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
+  //  }
 
 
     stages {
@@ -21,7 +21,7 @@ pipeline {
                  script{
                         dir("terraform")
                         {
-                            git "https://github.com/bkrraj/aws-terraform-jenkins-s3-proj.git"
+                            git "https://github.com/balajiradhakrb/aws-terraform-jenkins-s3-proj.git"
                         }
                     }
                 }
